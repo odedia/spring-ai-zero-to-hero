@@ -6,6 +6,7 @@ import com.example.command.agent.dto.ChatTraceResponse;
 import java.util.*;
 import org.jline.utils.AttributedString;
 import org.jline.utils.AttributedStyle;
+import org.springframework.http.MediaType;
 import org.springframework.shell.jline.PromptProvider;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
@@ -44,6 +45,25 @@ public class AgentContext implements PromptProvider {
             + this.agentProperties.getPort()
             + "/agents/model-directed-loop";
     return restClientBuilder.baseUrl(targetUrl).build();
+  }
+
+  public String login(String email) {
+    String targetUrl =
+        "http://"
+            + this.agentProperties.getHost()
+            + ":"
+            + this.agentProperties.getPort()
+            + "/acme/login";
+
+    return this.restClientBuilder
+        .baseUrl(targetUrl)
+        .build()
+        .post()
+        .contentType(MediaType.APPLICATION_JSON)
+        .body(Map.of("email", email))
+        .retrieve()
+        .toEntity(String.class)
+        .getBody();
   }
 
   public AgentJson createAgent(String agentId) {

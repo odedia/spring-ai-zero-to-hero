@@ -81,6 +81,12 @@ public class AgentCommands {
     refreshPrompt();
   }
 
+  @Command(command = "login", description = "Login the user to the ACME fitness store")
+  public void login(String email) {
+    String customer = this.agentContext.login(email);
+    System.out.println("[LOGIN] Welcome " + customer + "!");
+  }
+
   @Command(command = "send", description = "Send a message to the current agent")
   public void send(String text) {
     String agentId = agentContext.getCurrentAgentId();
