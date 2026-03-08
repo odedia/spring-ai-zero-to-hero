@@ -1,6 +1,6 @@
 # spring-ai-zero-to-hero
 
-Example applications showing how to use Spring AI to build Generative 
+Example applications showing how to use Spring AI 2 and Spring Boot 4 to build Generative 
 AI projects. Each sample application contains a `readme.md` with instructions
 on how to run the application and areas of the code to pay attention to.
 

@@ -1,6 +1,6 @@
 # spring-ai-zero-to-hero
 
-Example applications showing how to use Spring AI to build Generative
+Example applications showing how to use Spring AI 2 and Spring Boot 4 to build Generative
 AI projects.
 
 ## Software Prerequisites
@@ -125,9 +125,9 @@ generative AI to existing applications or to implement brand new AI apps using t
 project.
 
 We assume no previous AI experience. The workshop will teach you key AI concepts and how to apply
-them in your applications, using the Spring AI project.
+them in your applications, using the Spring AI 2 and Spring Boot 4 projects.
 
-The workshop is hands-on. Bring your laptop and a willingness to learn. We will provide Spring AI
+The workshop is hands-on. Bring your laptop and a willingness to learn. We will provide Spring AI 2
 based sample code and the API keys for the AI services. By the end of the day you will know how to
 add generative AI features to your Spring apps.
 
