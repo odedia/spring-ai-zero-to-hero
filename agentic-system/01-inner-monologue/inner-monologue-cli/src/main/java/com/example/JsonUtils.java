@@ -2,10 +2,12 @@ package com.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
-import org.springframework.stereotype.Component;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
-@Component
 public class JsonUtils {
+
+  private static final Logger logger = LoggerFactory.getLogger(JsonUtils.class);
 
   private final ObjectWriter prettyWriter;
 
@@ -17,6 +19,7 @@ public class JsonUtils {
     try {
       return prettyWriter.writeValueAsString(obj);
     } catch (Exception e) {
+      logger.error("Failed to format JSON", e); // Use logger for error
       return "[ERROR] Failed to format JSON: " + e.getMessage();
     }
   }
