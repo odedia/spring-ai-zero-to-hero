@@ -1,7 +1,6 @@
 # Spring AI MCP Capabilities Sample
 
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Java Version](https://img.shields.io/badge/Java-17%2B-orange)](https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html)
+[![Java Version](https://img.shields.io/badge/Java-25%2B-orange)](https://www.oracle.com/java/technologies/downloads/)
 
 This sample project demonstrates how to create an MCP server using Spring AI's MCP annotations. It showcases a comprehensive implementation of MCP server capabilities including tools, resources, prompts, and completions using a clean, declarative approach with Java annotations.
 

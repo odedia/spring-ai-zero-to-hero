@@ -5,14 +5,14 @@ AI projects.
 
 ## Software Prerequisites
 
-**You need the following software installed: Java 21+, docker, ollama, httpie,
+**You need the following software installed: Java 25+, docker, ollama, httpie,
 and your favourite Java IDE. This is a lot of GBs to download so please make
 sure to have all this stuff installed before the conference workshop, as the
 conference wifi may be slow, so you might not be able to run the samples.**
 
 ### Java development tooling
 
-* Java 21+ you can use [sdkman.io](https://sdkman.io/)
+* Java 25+ you can use [sdkman.io](https://sdkman.io/)
 * [Maven](https://maven.apache.org/index.html)
 * Favourite Java IDE one of
     * [IntelliJ](https://www.jetbrains.com/idea/download)

@@ -16,7 +16,7 @@ at deeplearning.ai.
 ## Software Prerequisites
 
 ### Java development tooling
-* Java 21 you can use [sdkman.io](https://sdkman.io/)
+* Java 25 you can use [sdkman.io](https://sdkman.io/)
 * [Maven](https://maven.apache.org/index.html)
 * Favourite Java IDE one of
     * [IntelliJ](https://www.jetbrains.com/idea/download)

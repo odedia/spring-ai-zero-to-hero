@@ -4,7 +4,7 @@ This example demonstrates how to build a basic MCP client application using Spri
 
 ## Prerequisites
 
-- Java 17 or higher
+- Java 25 or higher
 - Maven 3.6+
 - npx package manager
 - OpenAI API key (Get one at https://platform.openai.com/)
